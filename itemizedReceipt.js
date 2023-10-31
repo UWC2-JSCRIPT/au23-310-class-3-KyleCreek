@@ -6,9 +6,11 @@
 function logReceipt(...items){
   // Init Variable to store the Total
   let total = 0;
+  let tax = 0;
 
   items.forEach((item)=>{
     total += item.price;
+    tax = item.price*1.1
     console.log(`${item.descr} - ${item.price}`)
   })
   console.log(total);
